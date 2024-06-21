@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.menu ul li a:hover {
+    color: #00bcd4;
+}
+
+.container {
+    padding-top: 70px; /* Ajusta el padding para que el contenido no quede oculto detrás del menú */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    margin: 15px 0;
+    border-radius: 10px;
+    width: 60%; /* Asegura que todos los botones tengan el mismo tamaño y ocupen más espacio */
+    max-width: 400px;
+    text-align: center;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.turquoise {
+    background-color: #00bcd4;
+}
+
+.turquoise:hover {
+    background-color: #0097a7;
+    transform: translateY(-5px);
+}
+
+.purple {
+    background-color: #9c27b0;
+}
+
+.purple:hover {
+    background-color: #7b1fa2;
+    transform: translateY(-5px);
+}

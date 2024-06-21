@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Leonardo Aguado">
+    <meta name="author" content="Axel Agabo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Circuitos Eléctricos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../imagenes/DALL·E 2024-06-20 18.28.11 - A colorful, cartoon-style icon of a dinosaur eating mathematics symbols. The dinosaur should look intimidating with a fierce expression and sharp teet.webp" type=".webp">
+</head>
+
+<body>
+    <!-- <nav class="menu">
+        <ul>
+            <li><a href="../index.html">menu</a></li>
+            <li><a href="../calculadora_estandar/calculadora_estandar.html">Calculadora Estándar</a></li>
+            <li><a href="../calculadora_cientifica/calculadora_cientifica.html">Calculadora Científica</a></li>
+            <li><a href="../calculadora_programadores/calculadora_para_programadores.html">Calculadora para Programadores</a></li>
+            <li><a href="../calculadora_de_fechas/calculadores_de_fechas.html">Calculadora de Fechas</a></li>
+            <li><a href="../calculadora_de_divisas/calculadora_de_divisa.html">Calculadora de Divisas</a></li>
+            <li><a href="../calculadora_de_derivadas/calculadora_de_derivadas.html">Calculadora de Derivadas</a></li>
+            <li><a href="../calculadora_de_graficas/calculadora_de_graficas.html">Calculadora de Divisas</a></li>
+            <li><a href="../calculadora_de_circitos_electricos/calculadora_de_circuitos_electricos.html">Calculadora de Divisas</a></li>
+        </ul> -->
+    </nav>
+    <div class="container">
+        <h1>Calculadora de Circuitos Eléctricos</h1>
+        <div class="panel">
+            <h2>Elementos</h2>
+            <div class="element" draggable="true" data-type="resistor"><span class="icon resistor-icon"></span>Resistor
+            </div>
+            <div class="element" draggable="true" data-type="voltage-source"><span
+                    class="icon voltage-source-icon"></span>Fuente de Voltaje</div>
+            <div class="element" draggable="true" data-type="horizontal-wire"><span
+                    class="icon horizontal-wire-icon"></span>Cable Horizontal</div>
+            <div class="element" draggable="true" data-type="vertical-wire"><span
+                    class="icon vertical-wire-icon"></span>Cable Vertical</div>
+            <div class="element" draggable="true" data-type="ammeter"><span class="icon ammeter-icon"></span>Amperímetro
+            </div>
+            <div class="element" draggable="true" data-type="voltmeter"><span
+                    class="icon voltmeter-icon"></span>Voltímetro</div>
+            <div class="element" draggable="true" data-type="capacitor"><span
+                    class="icon capacitor-icon"></span>Capacitor</div>
+            <div class="element" draggable="true" data-type="inductor"><span class="icon inductor-icon"></span>Inductor
+            </div>
+        </div>
+        <div class="workspace">
+            <h2>Área de Trabajo</h2>
+            <div id="circuit-area" class="circuit-area"></div>
+        </div>
+        <div class="controls">
+            <button id="undo">Deshacer</button>
+            <button id="redo">Rehacer</button>
+            <button id="export-design">Exportar Diseño</button>
+            <button id="import-design">Importar Diseño</button>
+            <input type="file" id="file-input" style="display: none;" />
+            <button id="zoom-in">Acercar</button>
+            <button id="zoom-out">Alejar</button>
+            <button id="validate-design">Validar Diseño</button>
+            <button id="start-simulation">Simular Dinámicamente</button>
+            <button id="stop-simulation">Detener Simulación</button>
+        </div>
+        <div class="results">
+            <h2>Resultados</h2>
+            <div id="procedure"></div>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Valor</th>
+                        <th>Voltaje (V)</th>
+                        <th>Intensidad (A)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Resultados se agregarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <address>De los creadores de la Calculadora de derivadas y el juego del pato: Leonardo Aguado y Axel Agabo.
+    </address>
+    <br><br><br><br><br>
+    <script src="script.js"></script>
+</body>
+
+</html>

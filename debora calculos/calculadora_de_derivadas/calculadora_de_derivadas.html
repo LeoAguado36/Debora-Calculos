@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Aguado">
+    <meta name="author" content="Axel Agabo">
+    <title>Calculadora de Derivadas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.css">
+    <link rel="icon" href="../imagenes/DALL·E 2024-06-20 18.28.11 - A colorful, cartoon-style icon of a dinosaur eating mathematics symbols. The dinosaur should look intimidating with a fierce expression and sharp teet.webp" type=".webp">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/katex.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.11/contrib/auto-render.min.js"></script>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">menu</a></li>
+            <li><a href="../calculadora_estandar/calculadora_estandar.html">Calculadora Estándar</a></li>
+            <li><a href="../calculadora_cientifica/calculadora_cientifica.html">Calculadora Científica</a></li>
+            <li><a href="../calculadora_programadores/calculadora_para_programadores.html">Calculadora para Programadores</a></li>
+            <li><a href="../calculadora_de_fechas/calculadores_de_fechas.html">Calculadora de Fechas</a></li>
+            <li><a href="../calculadora_de_divisas/calculadora_de_divisa.html">Calculadora de Divisas</a></li>
+            <li><a href="../calculadora_de_derivadas/calculadora_de_derivadas.html">Calculadora de Derivadas</a></li>
+            <li><a href="../calculadora_de_graficas/calculadora_de_graficas.html">Calculadora de Divisas</a></li>
+            <li><a href="../calculadora_de_circitos_electricos/calculadora_de_circuitos_electricos.html">Calculadora de Divisas</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Calculadora de Derivadas</h1>
+        <h5>by: Leonardo Aguado</h5>
+        <form id="derivative-form">
+            <label for="function">Ingresa tu función (ej. x^2, 3*x^3, sin(x), etc.):</label>
+            <div id="function-container">
+                <input type="text" id="function" required>
+                <div id="function-latex"></div>
+            </div>
+            <div id="keyboard">
+                <button type="button" class="key">+</button>
+                <button type="button" class="key">-</button>
+                <button type="button" class="key">*</button>
+                <button type="button" class="key">/</button>
+                <button type="button" class="key">^</button>
+                <button type="button" class="key">¹</button>
+                <button type="button" class="key">²</button>
+                <button type="button" class="key">³</button>
+                <button type="button" class="key">⁴</button>
+                <button type="button" class="key">⁵</button>
+                <button type="button" class="key">⁶</button>
+                <button type="button" class="key">⁷</button>
+                <button type="button" class="key">⁸</button>
+                <button type="button" class="key">⁹</button>
+                <button type="button" class="key">(</button>
+                <button type="button" class="key">)</button>
+                <button type="button" class="key">x</button>
+                <button type="button" class="key">0</button>
+                <button type="button" class="key">1</button>
+                <button type="button" class="key">2</button>
+                <button type="button" class="key">3</button>
+                <button type="button" class="key">4</button>
+                <button type="button" class="key">5</button>
+                <button type="button" class="key">6</button>
+                <button type="button" class="key">7</button>
+                <button type="button" class="key">8</button>
+                <button type="button" class="key">9</button>
+                <button type="button" class="key">sin()</button>
+                <button type="button" class="key">cos()</button>
+                <button type="button" class="key">tan()</button>
+                <button type="button" class="key">csc()</button>
+                <button type="button" class="key">sec()</button>
+                <button type="button" class="key">cot()</button>
+                <button type="button" class="key">asin()</button>
+                <button type="button" class="key">acos()</button>
+                <button type="button" class="key">atan()</button>
+                <button type="button" class="key">log()</button>
+                <button type="button" class="key">ln()</button>
+                <button type="button" class="key">exp()</button>
+                <button type="button" class="key">sqrt()</button>
+                <button type="button" class="key">nthRoot()</button>
+                <button type="button" class="key special-key" id="delete">Borrar</button>
+                <button type="button" class="key special-key" id="clear">Limpiar</button>
+            </div>
+            <button type="submit">Calcular Derivada</button>
+        </form>
+        <div id="result-container">
+            <h2>Resultado:</h2>
+            <p id="result"></p>
+            <h2>Procedimiento:</h2>
+            <pre id="procedure"></pre>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

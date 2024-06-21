@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Divisas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../imagenes/DALL·E 2024-06-20 18.28.11 - A colorful, cartoon-style icon of a dinosaur eating mathematics symbols. The dinosaur should look intimidating with a fierce expression and sharp teet.webp" type=".webp">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="../index.html">menu</a></li>
+            <li><a href="../calculadora_estandar/calculadora_estandar.html">Calculadora Estándar</a></li>
+            <li><a href="../calculadora_cientifica/calculadora_cientifica.html">Calculadora Científica</a></li>
+            <li><a href="../calculadora_programadores/calculadora_para_programadores.html">Calculadora para Programadores</a></li>
+            <li><a href="../calculadora_de_fechas/calculadores_de_fechas.html">Calculadora de Fechas</a></li>
+            <li><a href="../calculadora_de_divisas/calculadora_de_divisa.html">Calculadora de Divisas</a></li>
+            <li><a href="../calculadora_de_derivadas/calculadora_de_derivadas.html">Calculadora de Derivadas</a></li>
+            <li><a href="../calculadora_de_graficas/calculadora_de_graficas.html">Calculadora de Divisas</a></li>
+            <li><a href="../calculadora_de_circitos_electricos/calculadora_de_circuitos_electricos.html">Calculadora de Divisas</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="currency-calculator">
+            <h1>Calculadora de Divisas</h1>
+            <div class="exchange-info">
+                <canvas id="exchangeChart"></canvas>
+                <p id="last-updated">Última actualización: </p>
+            </div>
+            <div class="calculator-section">
+                <input type="number" id="amount" placeholder="Cantidad">
+                <select id="from-currency">
+                    <!-- Opciones de divisas se llenarán con JavaScript -->
+                </select>
+                <select id="to-currency">
+                    <!-- Opciones de divisas se llenarán con JavaScript -->
+                </select>
+                <button id="convert">Convertir</button>
+                <div class="result" id="result-conversion"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
